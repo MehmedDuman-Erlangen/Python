@@ -39,3 +39,4 @@ randomDynamicList.extend(["This can be a list or just a variable"]) #Extends jus
 randomDynamicList.append([1,2,3]) #append adds a seperate list to the current existing list
 print(randomDynamicList)
 
+print("felix kann mich mal")
