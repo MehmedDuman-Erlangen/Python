@@ -40,3 +40,41 @@ randomDynamicList.append([1,2,3]) #append adds a seperate list to the current ex
 print(randomDynamicList)
 
 
+romische={'I':1,'V':5,'X':10,'L':50,
+
+          'C':100,'D':500,'M':1000}
+
+ 
+
+eingabe=input("Romische Zahlen Eingeben: ").upper()
+
+#print(romische[inputs])
+
+nummer=0
+
+temp=0
+
+#xlv 10 50 5
+
+for i in range(len(eingabe)):
+
+    if romische[eingabe[i]]>temp:
+
+        print(f"{romische[eingabe[i]]} > {temp} ")
+
+        nummer-=temp
+
+        print(nummer)
+
+    else:
+
+        nummer+=temp
+
+    temp=romische[eingabe[i]]
+
+    print("temp:",temp)
+
+nummer+=temp
+
+print("Dezimal: ",nummer)
+
