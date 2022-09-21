@@ -29,3 +29,17 @@ print(S[3])
 text = "01234567"
 text = "Hello"
 print(text[0:4])
+
+upperTest = ("hello world").upper() #Upper writes the string all in big capitals
+print(upperTest)
+
+import time 
+n = 1000
+start_time = time.time()
+liste = []
+for i in range(n):
+    liste = liste + [i * 2]
+
+print(time.time() - start_time)
+print(time.time())
+
